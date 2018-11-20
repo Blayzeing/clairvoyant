@@ -130,11 +130,4 @@ for pos in [(b.xAvg, b.yAvg) for b in blobs]:
 plt.imshow(flattened)
 plt.show()
 
-# Here we should probably bin them based on similar sizes, then choose the bin of blobs that is most likely to be the LEDs
-# (This could be either the bin with the most [assumes that all other noise will be randomly distributed and rare], or the bin
-# that has the closest number of elements as has been specified as number of LEDs)
-# Alternatively, the sizes of the blobs could be found, and the high and low-frequency stuff taken out.
-
-# Now we have the positions of each blob (which should be each LED), we need to actually work out the rotation of it.
-# This will be done as in demo1, using convolution along the horizontal and vertical.
 
